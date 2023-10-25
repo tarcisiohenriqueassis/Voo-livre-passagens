@@ -5,108 +5,6 @@
     box-sizing: border-box;
 }
 
-/*tablet 768px*/
-@media(max-width:769px){
-header #container-topo-logo{
-    width: 100%;
-    justify-content: center;
-}    
-main .tabela {
-    background-color: #ffffff;
-    width: 90%;
-    height: 90%;
-    margin: auto;
-}
-main .solicite-orcamento{
-    width: 90%;
-}
-main .container-tabela #padding-top {
-    width: 100%;
-    height: 99%;
-    padding-top: 27px;
-}
-main .fieldset-ida-volta .data-volta{
-    padding: 0px 6px 0px 0px;
-}
-main form .fieldset-origem-destino #origem {
-    width: 45%;
-}
-main form .fieldset-origem-destino #destino {
-    width: 44%;
-    margin: 0px;
-}
-.ofertas{
-    width: 100%;
-    height:470px;
-}
-.ofertas #title-ofertas {
-    width: 94%;
-}
-.ofertas #container-imagens-ofertas{
-    display: flex;
-    width: 100%;
-    height: 368px;
-}
- #container-explore-a-natureza{
-    width: 100%;
-    height: auto;
-}
-.container-explore-a-natureza .container-texto {
-    width: 94%;
-}
-footer{
-    height: auto;
-    font-size: 10px;
-}
-}
-
-
-@media (max-width:426px){
-.ofertas{
-    width: 100%;
-    height: 670px;
-}
-#imagem-maior{
-    width: 100%;
-    height: 60%;
-}
-.ofertas #quatro-imagens{
-    width: 100%;
-    height: 100%;
-}
-.ofertas #container-imagens-ofertas{
-    flex-wrap: wrap;
-}
-.container-explore-a-natureza .secao-fotos{
-    flex-wrap: wrap;
-}    
-.container-explore-a-natureza #cachoeira, #lencol-maranhense{
-    height: 48%;
-    margin: 0px;
-}
-footer{
-    height: auto;
-    font-size: 10px;
-}
-}
-
-@media(max-width:376px){
-main .container-tabela #padding-top{
-    height: 99%;
-    padding-top: 6px;
-    }
-main .tabela{
-    height: 94%;
-    }
-footer{
-        height: auto;
-        font-size: 8px;
-    }
-}
-
-
-
-
 header .container-topo-logo{
     display: flex;
     width: 72%;
@@ -281,6 +179,7 @@ main form button:hover{
     height: 100%;
     object-fit: cover;
     position: relative;
+    object-position: center right;
 }
 .ofertas .imagem-maior figure figcaption{
     width: 100%;
@@ -339,13 +238,13 @@ main form button:hover{
 }
 .container-explore-a-natureza .secao-fotos{
     width: 100%;
-    height: 350px;
+    height: 290px;
     display: flex;
     position: relative;
 }
 .container-explore-a-natureza figure{
     width: 100%;
-    height: 81%;
+    height: 100%;
     position: relative;
     margin: 0px 4px 0px 0px;
 }
@@ -455,3 +354,114 @@ footer .redes-sociais .twiter::before{
     background-repeat: no-repeat;
     padding: 0px 2px 0px 0px;
 }
+
+/*tablet 768px*/
+@media(max-width:769px){
+    header #container-topo-logo{
+        width: 100%;
+        justify-content: center;
+    }    
+    main .tabela {
+        background-color: #ffffff;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+    main .solicite-orcamento{
+        width: 90%;
+    }
+    main .container-tabela #padding-top {
+        width: 100%;
+        height: 99%;
+        padding-top: 27px;
+    }
+    main .fieldset-ida-volta .data-volta{
+        padding: 0px 6px 0px 0px;
+    }
+    main form .fieldset-origem-destino #origem {
+        width: 45%;
+    }
+    main form .fieldset-origem-destino #destino {
+        width: 44%;
+        margin: 0px;
+    }
+    .ofertas{
+        width: 100%;
+        height: 450px;
+    }
+    .ofertas #title-ofertas {
+        width: 94%;
+    }
+    .ofertas #container-imagens-ofertas{
+        display: flex;
+        width: 100%;
+        height: 368px;
+    }
+     #container-explore-a-natureza{
+        width: 100%;
+        height: 400px;
+    }
+    .container-explore-a-natureza .container-texto {
+        width: 94%;
+    }
+    .secao-fotos{
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .container-explore-a-natureza figure{
+        height: 49%;
+        margin: 0px;
+    }
+    footer{
+        height: auto;
+        font-size: 10px;
+    }
+    }
+    
+    
+    @media (max-width:426px){
+    .ofertas{
+        width: 100%;
+        height: 670px;
+    }
+    #imagem-maior{
+        width: 100%;
+        height: 60%;
+    }
+    .ofertas #quatro-imagens{
+        width: 100%;
+        height: 100%;
+    }
+    .ofertas #container-imagens-ofertas{
+        flex-wrap: wrap;
+    }
+    .container-explore-a-natureza .secao-fotos{
+        flex-wrap: wrap;
+    }    
+    .container-explore-a-natureza #cachoeira, #lencol-maranhense{
+        height: 48%;
+        margin: 0px;
+    }
+    footer{
+        height: auto;
+        font-size: 10px;
+    }
+    }
+    
+    @media(max-width:376px){
+    main .container-tabela #padding-top{
+        height: 99%;
+        padding-top: 6px;
+        }
+    main .tabela{
+        height: 94%;
+        }
+    footer{
+        height: auto;
+        text-align: center;
+        font-size: 12px;
+        }
+    footer nav{ 
+        align-items: center;
+    }
+    }
